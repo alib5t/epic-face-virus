@@ -54,7 +54,7 @@ class _HomePageState extends State<HomePage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
-                'YAZI',
+                'YOU FOUND THE EPİC FACE!!',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: Colors.black,
