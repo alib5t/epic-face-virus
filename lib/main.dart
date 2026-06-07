@@ -48,25 +48,29 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: Center(
-        child: Stack(
-          alignment: Alignment.center,
-          children: [
-            Image.asset(
-              'assets/image.png',
-              fit: BoxFit.contain,
-              width: MediaQuery.of(context).size.width * 0.8,
-              height: MediaQuery.of(context).size.height * 0.8,
-            ),
-            const Text(
-              'YOU FOUND THE EPİC FACE!!',
-              style: TextStyle(
-                color: Colors.black,
-                fontSize: 42,
-                fontWeight: FontWeight.bold,
+      body: SafeArea(
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Text(
+                'YAZI',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 42,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
-            ),
-          ],
+              const SizedBox(height: 20),
+              Image.asset(
+                'assets/image.png',
+                width: MediaQuery.of(context).size.width * 0.8,
+                height: MediaQuery.of(context).size.height * 0.6,
+                fit: BoxFit.contain,
+              ),
+            ],
+          ),
         ),
       ),
     );
